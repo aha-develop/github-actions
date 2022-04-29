@@ -1,0 +1,43 @@
+{
+  "name": "aha-develop.github-actions",
+  "description": "Github Actions Integration",
+  "version": "0.0.1",
+  "author": "Aha! (support@aha.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aha-develop/github-actions"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@aha-app/aha-develop-react": "^1.0.6",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.13",
+    "prettier": "^2.5.1"
+  },
+  "ahaExtension": {
+    "contributes": {
+      "views": {
+        "githubActionsAttribute": {
+          "title": "Github Actions",
+          "entryPoint": "src/views/githubActions.tsx",
+          "host": "attribute",
+          "recordTypes": [
+            "Feature",
+            "Requirement",
+            "Epic"
+          ]
+        }
+      },
+      "endpoints": {
+        "githubActionsHook": {
+          "title": "Hook from Github Actions",
+          "entryPoint": "src/endpoints/githubActions.ts",
+          "public": true
+        }
+      }
+    }
+  }
+}
