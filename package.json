@@ -1,6 +1,6 @@
 {
   "name": "aha-develop.github-actions",
-  "description": "Github Actions Integration",
+  "description": "GitHub Actions Integration",
   "version": "0.0.1",
   "author": "Aha! (support@aha.io)",
   "repository": {
@@ -21,7 +21,7 @@
     "contributes": {
       "views": {
         "githubActionsAttribute": {
-          "title": "Github Actions",
+          "title": "GitHub Actions",
           "entryPoint": "src/views/githubActions.tsx",
           "host": "attribute",
           "recordTypes": [
@@ -33,7 +33,7 @@
       },
       "endpoints": {
         "githubActionsHook": {
-          "title": "Hook from Github Actions",
+          "title": "Hook from GitHub Actions",
           "entryPoint": "src/endpoints/githubActions.ts",
           "public": true
         }
