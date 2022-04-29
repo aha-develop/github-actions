@@ -64,6 +64,7 @@ const parsePayloadToAction = (payload: Webhook.IPayload): IExtensionFieldGithubA
     workflows: {
       [workflow_run.head_branch]: {
         id: workflow?.id,
+        url: workflow_run?.html_url,
         buildNumber: `${workflow_run.run_number}`,
         buildStatus: workflow_run.conclusion,
         startTime: workflow_run.run_started_at,

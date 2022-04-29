@@ -19,14 +19,10 @@ const AttributeWorkflows = ({ workflows = [], project }: AttributeWorkflowsProps
 
   const handleBranchClick = useCallback(
     (workflow: IWorkflow) => {
-      if (!isValidExternalLink(project?.url)) {
+      if (!isValidExternalLink(workflow?.url)) {
         return;
       }
-      window.open(
-        `${project?.url}?version=GB${workflow?.branch?.replace('refs/heads/', '') ?? 'main'}]`,
-        '_blank',
-        'noopener,noreferrer'
-      );
+      window.open(workflow?.url, '_blank', 'noopener,noreferrer');
       return;
     },
     [project]

@@ -17,6 +17,7 @@ declare interface IProject {
 
 declare interface IWorkflow {
   id: number;
+  url?: string;
   buildNumber?: string;
   buildStatus?: GithubActions.IWorkflowConclusion;
   startTime?: string;
