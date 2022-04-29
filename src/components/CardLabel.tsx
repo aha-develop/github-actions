@@ -7,7 +7,7 @@ export type CardLabelProps = {
 
 const CardLabel = ({ title, value = 'Unknown' }: CardLabelProps) => {
   return (
-    <span>
+    <span style={{ padding: '3px' }}>
       <strong>{title}:</strong> {value ?? 'Unknown'}
     </span>
   );
