@@ -1,7 +1,7 @@
 {
-  "name": "aha-develop.github-actions",
-  "description": "GitHub Actions Integration",
-  "version": "0.0.1",
+  "name": "@aha-develop/github-actions",
+  "description": "GitHub Actions",
+  "version": "1.0.0",
   "author": "Aha! (support@aha.io)",
   "repository": {
     "type": "git",
