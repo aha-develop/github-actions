@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> The Aha! Develop GitHub Actions extension has been combined into the main [GitHub extension](https://github.com/aha-develop/github), and this extension is no longer maintained.
+
 # GitHub Actions for Aha! Develop
   
 This is an extension for [Aha! Develop](https://www.aha.io/develop) providing integration with GitHub Actions.
@@ -13,19 +16,8 @@ It provides these contributions:
 
 ## Installing the extension
 
-**Note: In order to install an extension into your Aha! Develop account, you must be an account administrator.**
-
-1. Install the GitHub extension by clicking [here](https://secure.aha.io/settings/account/extensions/install?url=https%3A%2F%2Fsecure.aha.io%2Fextensions%2Faha-develop.github-actions.gz).
-
-2. Configure a webhook in GitHub. The extension will automatically link Aha! records to branches and pull requests in GitHub if you include the Aha! reference number (like `APP-123`) in the name of the branch or pull request. To enable this:
-
-   - In Aha! go to Settings -> Account -> Extensions -> GitHub Integration -> Webhook from Github. Copy the hidden URL.
-
-   - In GitHub go to each repo that you want to integrate with Aha!. In Settings -> Webhook create a new webhook. The payload URL is the URL you copied from the extension. The content type should be `application/json`. Select the following individual events: Branch or tag creation, Check runs, Pull requests, Pull request reviews, Pushes, Statuses. Enable the webhook.
-
-    - Instead of doing this at the repo level, it is also possible to create an organization-wide webhook that wil work for all repos.
-
-3. Configure the extension with your repos. In Aha! go to Settings -> Account -> Extensions -> GitHub Integration. In the Related repositories section add each repo that should be considered when looking for PRs that match a feature ID.
+> [!NOTE]
+> Install the main [GitHub extension](https://github.com/aha-develop/github). This extension is no longer supported. 
 
 ## Working on the extension
 
